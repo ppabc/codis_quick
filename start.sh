@@ -12,9 +12,9 @@ Install_C(){
 yum install -y gcc make gcc-c++ automake lrzsz openssl-devel zlib-* bzip2-* readline* zlib-* bzip2-* git
 yum install -y nmap unzip wget lsof xz net-tools
 cd /opt/
-#wget http://www.aqzt.com/download/go.tar
-#wget http://www.aqzt.com/download/jdk.tar
-#wget http://www.aqzt.com/download/zk.tar
+wget http://www.aqzt.com/download/go.tar
+wget http://www.aqzt.com/download/jdk.tar
+wget http://www.aqzt.com/download/zk.tar
 tar zxvf  go.tar
 tar zxvf  jdk.tar
 tar zxvf  zk.tar
