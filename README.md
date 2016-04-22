@@ -12,4 +12,5 @@ zookeeper路径：/opt/zk
 
 安装方法
 Usage: $SCRIPTNAME {start|stop|restart|install|uninstall}
+
 例子：bash start.sh  install
