@@ -25,3 +25,9 @@ codis路径：/opt/go/src/github.com/CodisLabs/codis
 Usage: $SCRIPTNAME {start|stop|restart|install|uninstall}
 
 例子：bash start.sh  install
+
+当输入install时，开始安装出现提示
+
+Please input this machine IP : >
+
+输入本机IP即可
