@@ -14,5 +14,6 @@ if [[ "${_ports}" == "open" ]]
 then
     echo "codis-dashboard is ok"
 else
+    sed -i  '/codis.aqzt.com/d' /etc/hosts
     echo "192.168.1.15  codis.aqzt.com" >> /etc/hosts
 fi
