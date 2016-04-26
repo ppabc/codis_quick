@@ -31,3 +31,5 @@ Usage: $SCRIPTNAME {start|stop|restart|install|uninstall}
 Please input this machine IP : >
 
 输入本机IP即可
+
+安装完成后访问http://IP地址:8080
