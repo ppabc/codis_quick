@@ -7,7 +7,7 @@
 ##email: ppabc@qq.com
 ##robert yu
 ##centos 7
-
+yum install -y nmap
 _ports=$(nmap 192.168.1.12 -p 19000 |grep '19000' | awk '{print $2}')
 
 if [[ "${_ports}" == "open" ]]

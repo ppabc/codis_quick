@@ -1,4 +1,12 @@
 #!/bin/sh
+## fastcodis 2016-04-22
+## http://www.aqzt.com
+## http://www.aqzt.com/download/go.tar
+## http://www.aqzt.com/download/jdk.tar
+## http://www.aqzt.com/download/zk.tar
+##email: ppabc@qq.com
+##robert yu
+##centos 7
 source /etc/profile
 
 restartproxy()

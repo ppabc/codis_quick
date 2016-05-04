@@ -1,7 +1,7 @@
 fastcodis
 ===========
 
-实现centos7系统下快速安装codis3，快速安装。
+实现centos7系统下快速安装codis3。
 
 codis版本：codis-3.0.3.tar.gz
 
