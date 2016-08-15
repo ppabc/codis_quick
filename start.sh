@@ -9,8 +9,7 @@
 ##centos 7
 
 Install_C(){
-yum install -y gcc make gcc-c++ automake lrzsz openssl-devel zlib-* bzip2-* readline* zlib-* bzip2-* git
-yum install -y nmap unzip wget lsof xz net-tools
+yum install -y gcc make gcc-c++ automake lrzsz openssl-devel zlib-* bzip2-* readline* zlib-* bzip2-* git nmap unzip wget lsof xz net-tools
 cd /opt/
 wget http://www.aqzt.com/download/go.tar
 wget http://www.aqzt.com/download/jdk.tar
@@ -22,11 +21,13 @@ tar zxvf  zk.tar
 cat >>/etc/profile<<EOF
 export GOROOT=/opt/go
 export GOPATH=/opt/go/src/github.com/CodisLabs/codis
-JAVA_HOME=/opt/tomcat/jdk1.8.0_77
-CLASSPATH=.:/opt/tomcat/jdk1.8.0_77/lib/dt.jar:/opt/tomcat/jdk1.8.0_77/lib/tools.jar
+export JAVA_HOME=/opt/tomcat/jdk1.8.0_77
 export ZOOKEEPER=/opt/zk
-export PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin:/opt/go/src/github.com/CodisLabs/codis/bin:/opt/zk/bin:/opt/tomcat/jdk1.8.0_77/bin:/opt/go/bin:/opt/go/src/github.com/CodisLabs/codis/bin:/opt/zk/bin:/bin:/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/root/bin
+export CLASSPATH=.:/opt/tomcat/jdk1.8.0_77/lib/dt.jar:/opt/tomcat/jdk1.8.0_77/lib/tools.jar
+export PATH=\$PATH:/opt/tomcat/jdk1.8.0_77/bin:/opt/zk/bin:/opt/go/src/github.com/CodisLabs/codis/bin:/opt/go/bin
 EOF
+
+
 source  /etc/profile
 echo  "192.168.10.131  ZooKeeper-node1" >>/etc/hosts
 sed -i "s/192.168.10.131/$IP/g" /etc/hosts
