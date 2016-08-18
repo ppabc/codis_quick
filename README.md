@@ -1,7 +1,10 @@
-fastcodis
+codis_quick
 ===========
-
 实现centos7系统下快速安装codis3。
+
+微信关注https://github.com/aqzt
+
+![image](https://github.com/ppabc/codis_quick/raw/master/images/aqzt.jpg)
 
 codis版本：codis-3.0.3.tar.gz
 
