@@ -26,11 +26,11 @@ echo  "192.168.10.131  ZooKeeper-node1" >>/etc/hosts
 sed -i "s/192.168.10.131/$IP/g" /etc/hosts
 mkdir  -p /data/zookeeper/
 echo 1 > /data/zookeeper/myid
-sed -i "s/192.168.10.131/$IP/g" /opt/go/src/github.com/CodisLabs/codis/etc/codis.json
-sed -i "s/192.168.10.131/$IP/g" /opt/go/src/github.com/CodisLabs/codis/etc/dashboard.toml
-sed -i "s/192.168.10.131/$IP/g" /opt/go/src/github.com/CodisLabs/codis/scripts/start_codis_ha.sh
-sed -i "s/192.168.10.131/$IP/g" /opt/go/src/github.com/CodisLabs/codis/scripts/start_codis_proxy.sh
-sed -i "s/192.168.10.131/$IP/g" /opt/go/src/github.com/CodisLabs/codis/scripts/redis-key.sh
+sed -i "s/192.168.10.131/$IP/g" /opt/codis/etc/codis.json
+sed -i "s/192.168.10.131/$IP/g" /opt/codis/etc/dashboard.toml
+sed -i "s/192.168.10.131/$IP/g" /opt/codis/scripts/start_codis_ha.sh
+sed -i "s/192.168.10.131/$IP/g" /opt/codis/scripts/start_codis_proxy.sh
+sed -i "s/192.168.10.131/$IP/g" /opt/codis/scripts/redis-key.sh
 Start_C
 }
 
@@ -39,7 +39,7 @@ source  /etc/profile
 cd /opt/zk/bin
 /opt/zk/bin/zkServer.sh  start
 sleep 9s
-cd /opt/go/src/github.com/CodisLabs/codis/scripts
+cd /opt/codis/scripts
 sh start_codis_dashboard.sh
 sleep 3s
 sh start_codis_proxy.sh
